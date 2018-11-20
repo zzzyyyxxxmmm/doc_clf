@@ -32,7 +32,7 @@
 
    - Or you can choose to run testAPI.py to test them. (Check the server address and keep it running)
 
-    ![Home](https://github.com/zzzyyyxxxmmm/doc_clf/img/testAPI.png)
+    ![Home](https://github.com/zzzyyyxxxmmm/doc_clf/tree/master/img/testAPI.png)
 3. **Deployment**
 
     The service is based on flask and the entrance file is application.py, you can directly run it at your server. The default address is `http://localhost:5000/`
@@ -52,7 +52,7 @@ This is a common supervised classification problem: we have some features and la
 3.	Use different classification algorithm to train the model. Here I used four algorithms to train them.
 4.	Use the model to test and score them.
 
-![Home](https://github.com/zzzyyyxxxmmm/doc_clf/img/accuracy.png)
+![Home](https://github.com/zzzyyyxxxmmm/doc_clf/tree/master/img/accuracy.png)
 ### Build Server
 I built a website based on python so that users can query any docs conveniently. Flask is a python microframework. By adding some annotation we can simply map the URL to our function and return the HTML page.
 
