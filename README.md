@@ -11,7 +11,7 @@
     We provide APIs for users to query a single doc or multiple docs, you can also use them to test your own dataset.
     
    - _**Single query:**_
-`    http://flask-env.qmxg9smhrv.us-east-2.elasticbeanstalk.com/api/v1.0/predict?words=[your doc]`
+`    http://flask-env.8x6jvjnvrc.us-east-2.elasticbeanstalk.com/api/v1.0/predict?words=[your doc]`
     
    - **_Multiple query (build your own json file):_**
     
@@ -71,9 +71,10 @@ Considering AWS is the most popular cloud server in the world, AWS Elastic Beans
 ### Android Application
 Considering I’m not very good at building website or anything about cloud, I designed an android application for this project and hope to show my ability to some extent. 
 
-[Download Address](https://github.com/zzzyyyxxxmmm/app-debug.apk)
+[Download Address](https://github.com/zzzyyyxxxmmm/doc_clf/blob/master/app-debug.apk)
 
 [Github Address](https://github.com/zzzyyyxxxmmm/docClassifierAndroid)
+
 ![Home](https://github.com/zzzyyyxxxmmm/doc_clf/blob/master/img/mobile_structure.png)
 
 
@@ -83,7 +84,7 @@ Simulator
 
 Real Phone
 
-![Home](https://github.com/zzzyyyxxxmmm/doc_clf/blob/master/img/clf_apk.gif)
+![Home](https://github.com/zzzyyyxxxmmm/doc_clf/blob/master/img/real.png)
 
 
 
