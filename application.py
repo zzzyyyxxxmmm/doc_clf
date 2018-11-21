@@ -21,7 +21,6 @@ def init():
 
 @application.route("/")
 def home():
-    init()
     return render_template("index.html")
 
 
@@ -46,14 +45,15 @@ class PredictAPI(Resource):
         init()
         # print(request.args.get("words"))
         words2feature = encoder.transform([request.args.get("words")])
-        return {'label': clf.predict(words2feature)[0]}
+        return {'Label': clf.predict(words2feature)[0],'Confidence':max(max(clf.predict_proba(words2feature)))}
 
     def post(self):
         init()
         input = request.form["words"]
         words2feature = encoder.transform([input])
         result=str(clf.predict(words2feature)[0])
-        flash(f'Result: {result}!', 'success')
+        cf=max(max(clf.predict_proba(words2feature)))
+        flash(f'Result: {result}  Confidence: {cf}', 'success')
         return redirect(url_for('predict'))
 
 
@@ -67,7 +67,9 @@ class MuiltiplePredictAPI(Resource):
         request_json_data = request.get_json(force=True)
         words2feature = encoder.transform(request_json_data['words'])
         accuracy=clf.score(words2feature,request_json_data['labels'])
-        return {"accuracy":accuracy,'label': str(clf.predict(words2feature))}
+        cf=clf.predict_proba(words2feature)
+        cff=np.array(cf)
+        return {"Accuracy":accuracy,'Label': clf.predict(words2feature).tolist(),'Comfidence':cff.max(1).tolist()}
 
     def get(self):
         pass
