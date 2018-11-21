@@ -4,7 +4,7 @@
 
 1. **Website Address**
  
-    [Link](http://flask-env.qmxg9smhrv.us-east-2.elasticbeanstalk.com/)
+    [Link](http://flask-env.8x6jvjnvrc.us-east-2.elasticbeanstalk.com/)
 2. **APIs for query && Test your own dataset**
     
     We provide APIs for users to query a single doc or multiple docs, you can also use them to test your own dataset.
@@ -42,6 +42,8 @@
     
 ### Structure
 
+![Home](https://github.com/zzzyyyxxxmmm/doc_clf/tree/master/img/structure.png)
+
 ### Introduction
 This is a mini-project about document classification: Given you a list of encoded words, you need to output a label. Here I just re-encoded categorical words to integer codes and trained them by different classification algorithms. Then, I used flask to build a server base on python and provided APIs for users to query online. After that I deployed my server at AWS Elastic Beanstalk so that it can be used by anyone. Finally, I also designed an android application for users to query by their mobile phones.
 
@@ -53,6 +55,7 @@ This is a common supervised classification problem: we have some features and la
 4.	Use the model to test and score them.
 
 ![Home](https://github.com/zzzyyyxxxmmm/doc_clf/tree/master/img/accuracy.png)
+
 ### Build Server
 I built a website based on python so that users can query any docs conveniently. Flask is a python microframework. By adding some annotation we can simply map the URL to our function and return the HTML page.
 
@@ -66,6 +69,18 @@ Considering AWS is the most popular cloud server in the world, AWS Elastic Beans
 
 ### Android Application
 Considering I’m not very good at building website or anything about cloud, I designed an android application for this project and hope to show my ability to some extent. 
+
+![Home](https://github.com/zzzyyyxxxmmm/doc_clf/tree/master/img/mobile_structure.png)
+
+simulator
+
+![Home](https://github.com/zzzyyyxxxmmm/doc_clf/tree/master/img/clf_apk.gif)
+
+Real Phone
+
+![Home](https://github.com/zzzyyyxxxmmm/doc_clf/tree/master/img/clf_apk.gif)
+
+
 
 
 
