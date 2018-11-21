@@ -6,6 +6,8 @@
  
     [Link](http://flask-doc.sgn7ieqpcn.us-east-2.elasticbeanstalk.com/)
     
+    [Video](https://drive.google.com/file/d/1-wYsYuTTGyr7UJOGbkdsJVPbEtrj8lNv/view?usp=sharing)
+    
 2. **APIs for query && Test your own dataset**
     
     We provide APIs for users to query a single doc or multiple docs, you can also use them to test your own dataset.

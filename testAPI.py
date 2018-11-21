@@ -4,7 +4,7 @@ import preProcess
 
 
 dataPath="dataset/shuffled-full-set-hashed.csv"
-test_num=10
+test_num=100
 url_path='http://flask-doc.sgn7ieqpcn.us-east-2.elasticbeanstalk.com/'
 
 class Test:
